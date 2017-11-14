@@ -13,7 +13,294 @@ body {
 	font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;
 	font-size: 16px;
 	background: url('../img/tile.jpg') top left repeat;
+
 }
+
+
+.header-wrap{
+
+	width: 79%;
+	margin: 0 auto;
+}
+
+.nav-top{
+
+	background-color: #DB3C15;
+
+	 border-color: #DB3C15;
+
+}
+
+
+header {
+	background: #23272a;
+	padding: 20px 0;
+}
+
+.lower-header {
+	padding: 6% 0 2%;
+}
+
+.slider-text {
+	float: left;
+	width: 50%;
+}
+
+.slider-text h2 {
+	color: #e44f2b;
+	font-size: 40px;
+}
+.slider-text p {
+	color: #8fa7ae;
+	font-size: 20px;
+	margin: 20px 0;
+}
+
+
+
+
+
+.slider-img {
+	float: right;
+	width: 30%;
+}
+.clear {
+	clear: both;
+}
+
+
+
+
+
+.slider-text a {
+	background: #8fa7ae;
+	display: inline-block;
+	padding: 8px 25px;
+	font-size: 20px;
+	color: #23272a;
+	position: relative;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	border-radius: .3em;
+}
+
+
+
+
+.pic-slider{
+
+	width: 80%;
+}
+
+
+.pic-slider h3{
+
+	font-size: 25px;
+	color: #e44f2b;
+	padding-bottom: 15px;
+
+}
+
+ /*test*/
+
+
+
+
+
+.test h1,p,h2{
+
+	color: #ffffff;
+}
+.holder,
+.first,
+.second,
+.third {
+
+	float: left;
+
+	height: 30em;
+	width: 50%;
+}
+
+
+.cat-img{
+
+
+	float: left;
+	background-image: url('../img/cat_img.jpg');
+	height: 30em;
+	width: 50%;
+	order: 2;
+	background-size: cover;
+	background-position: center;
+
+}
+
+
+.holder-text{
+
+
+	padding-right: 30px;
+	padding-bottom: 126px;
+	padding-left: 10%;
+	order: 1;
+}
+.first,
+.second,
+.third {
+	position: absolute;
+}
+.second,
+.third {
+	opacity: 0;
+}
+.holder {
+	height: 100vh;
+	/*position: relative;*/
+	z-index: 1;
+}
+.first {
+	animation: first 10s infinite;
+	background: linear-gradient(#5ff8ca, #60e08c);
+	z-index: 10;
+}
+@keyframes first {
+	0% {
+		opacity: 1.0;
+	}
+	10% {
+		opacity: 0.8;
+	}
+	20% {
+		opacity: 0.6;
+	}
+	30% {
+		opacity: 0.4;
+	}
+	40% {
+		opacity: 0.2;
+	}
+	50% {
+		opacity: 0.1;
+	}
+	60% {
+		opacity: 0.2;
+	}
+	70% {
+		opacity: 0.4;
+	}
+	80% {
+		opacity: 0.6;
+	}
+	90% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 1.0;
+	}
+}
+.second {
+	animation: second 10s infinite;
+	animation-delay: 2s;
+	background: linear-gradient(#19eaa6, #00a1f0);
+	z-index: 20;
+}
+@keyframes second {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 0.2;
+	}
+	20% {
+		opacity: 0.4;
+	}
+	30% {
+		opacity: 0.6;
+	}
+	40% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 1.0;
+	}
+	60% {
+		opacity: 0.8;
+	}
+	70% {
+		opacity: 0.6;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.third {
+	animation: third 10s infinite;
+	animation-delay: 8s;
+	background: linear-gradient(#aab7f8, #ff75c6);
+	z-index: 30;
+}
+@keyframes third {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 0.2;
+	}
+	20% {
+		opacity: 0.4;
+	}
+	30% {
+		opacity: 0.6;
+	}
+	40% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 1.0;
+	}
+	60% {
+		opacity: 0.8;
+	}
+	70% {
+		opacity: 0.6;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.txt {
+	margin-top: calc(10em - 43px);
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 400;
+	margin: 0;
+}
+p {
+	font-size: 20px;
+	margin-top: 26px;
+}
+
+/*test end*/
+
 
 /* ==== GLOBAL ==== */
 
@@ -28,7 +315,7 @@ h1 {
 }
 
 h1,h2 {
-	margin: 0 0 40px;
+	margin: 0 0 0;
 }
 
 h3 {
@@ -144,6 +431,35 @@ a.text-danger:hover {
 .badge.social.gplus:hover {
 	background: #db4b39;
 }
+
+
+/*end of global	*/
+
+
+.holder-text a {
+	background:#ffffff;
+	display: inline-block;
+	padding: 8px 25px;
+	font-size: 20px;
+	color: #23272a;
+	position: relative;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	border-radius: .3em;
+	color: #3c3c3c;
+}
+
+.holder-text a:hover{
+	background:#3c3c3c;
+	color: #ffffff;
+
+
+}
+
+
+
 
 /* === CUSTOM ICON SPRITES === */
 
@@ -660,10 +976,61 @@ footer li.signup-link a:hover {
 	#instructor .container {
 		background: rgba(255,255,255,0.8);
 		padding: 20px;
+
+
 	}
+
+
+	.cat-img{
+
+
+		float: none;
+		width: 100%;
+
+
+	}
+
+	.holder,
+	.first,
+	.second,
+	.third {
+
+		float: left;
+
+
+		width: 100%;
+	}
+
+
 }
 
 @media screen and (max-width : 768px) {
+
+	.cat-img{
+
+
+		float: none;
+		width: 100%;
+
+	}
+
+	.holder,
+	.first,
+	.second,
+	.third {
+
+		float: left;
+
+		height: 30em;
+		width: 100%;
+	}
+
+
+
+	img .pic-slider{
+
+		width: 20%;
+	}
 	.logo {
 		width: 50%;
 	}
@@ -683,6 +1050,32 @@ footer li.signup-link a:hover {
 }
 
 @media screen and (max-width : 568px) {
+	.cat-img{
+
+
+		float: none;
+
+		width: 100%;
+
+
+	}
+
+	.holder,
+	.first,
+	.second,
+	.third {
+
+		float: left;
+
+		height: 30em;
+		width: 100%;
+	}
+
+
+
+
+
+
 	#instructor .num {
 		height: 100px;
 		width: 100px;
@@ -698,3 +1091,6 @@ footer li.signup-link a:hover {
 		margin-right: 0;
 	}
 }
+
+
+
