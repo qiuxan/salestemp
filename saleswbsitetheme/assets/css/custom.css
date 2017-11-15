@@ -157,7 +157,7 @@ header {
 	opacity: 0;
 }
 .holder {
-	height: 100vh;
+	/*height: 100vh;*/
 	/*position: relative;*/
 	z-index: 1;
 }
@@ -301,6 +301,39 @@ p {
 
 /*test end*/
 
+
+
+/*product layout*/
+
+.product-layout {
+
+	height:22em;
+	background-size:cover !important;
+
+
+}
+
+/*.product-img1{*/
+
+	/*opacity: 0;*/
+/*}*/
+
+/*.product-img2{*/
+
+	/*opacity: 1;*/
+
+/*}*/
+
+/*.product-img2:hover{*/
+	/*opacity: 0;*/
+/*}*/
+
+/*.product-img1:hover{*/
+	/*opacity: 1;*/
+/*}*/
+
+
+/*end of product layout*/
 
 /* ==== GLOBAL ==== */
 
